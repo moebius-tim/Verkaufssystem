@@ -1,0 +1,17 @@
+C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\bin\Debug\Verkaufssystem.exe.config
+C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\bin\Debug\Verkaufssystem.exe
+C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\bin\Debug\Verkaufssystem.pdb
+C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\obj\Debug\Verkaufssystem.csprojAssemblyReference.cache
+C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\obj\Debug\ViewModel\MainViewModel.g.cs
+C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\obj\Debug\View\MainView.g.cs
+C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\obj\Debug\App.g.cs
+C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\obj\Debug\Verkaufssystem_MarkupCompile.cache
+C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\obj\Debug\Verkaufssystem_MarkupCompile.lref
+C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\obj\Debug\ViewModel\MainViewModel.baml
+C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\obj\Debug\View\MainView.baml
+C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\obj\Debug\Verkaufssystem.g.resources
+C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\obj\Debug\Verkaufssystem.Properties.Resources.resources
+C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\obj\Debug\Verkaufssystem.csproj.GenerateResource.cache
+C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\obj\Debug\Verkaufssystem.csproj.CoreCompileInputs.cache
+C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\obj\Debug\Verkaufssystem.exe
+C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\obj\Debug\Verkaufssystem.pdb
