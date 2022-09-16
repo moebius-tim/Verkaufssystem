@@ -11,6 +11,20 @@
         <vm:MainViewModel></vm:MainViewModel>
     </Window.DataContext>
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left">
+            <Button Margin="5" Command="{Binding OpenChildViewCommand}" Content="Open Child Window" HorizontalAlignment="Left"/>
+            <Button Margin="5" Command="{Binding UpdateViewCommand}" CommandParameter="Home" Content="Show Home View"/>
+            <Button Margin="5" Command="{Binding UpdateViewCommand}" CommandParameter="List" Content="Show List View"/>
+        </StackPanel>
+        <ContentControl Grid.Row="1">
+
+        </ContentControl>
     </Grid>
 </Window>
