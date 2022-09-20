@@ -3,8 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Verkaufssystem.View"
         xmlns:vm="clr-namespace:Verkaufssystem.ViewModel"
+        xmlns:local="clr-namespace:Verkaufssystem.View"
         mc:Ignorable="d"
         Title="SneakerMovement" Height="723.64" Width="1134.4">
     <Window.DataContext>
@@ -17,7 +17,10 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition/>
-        </Grid.RowDefinitions>
+        </Grid.RowDefinitions>  
+
+        <ContentControl Grid.Column="1" Content="{Binding CurrentViewModel}"></ContentControl>
+
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left">
             <Button Margin="5" Command="{Binding OpenChildViewCommand}" Content="Open Child Window" HorizontalAlignment="Left"/>
             <Button Margin="5" Command="{Binding UpdateViewCommand}" CommandParameter="Home" Content="Show Home View"/>

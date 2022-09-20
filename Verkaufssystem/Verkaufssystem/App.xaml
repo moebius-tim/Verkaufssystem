@@ -2,8 +2,15 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Verkaufssystem"
+             xmlns:view="clr-namespace:Verkaufssystem.View"
+             xmlns:viewmodel="clr-namespace:Verkaufssystem.ViewModel"
              StartupUri="View/MainView.xaml">
     <Application.Resources>
-         
+        <DataTemplate DataType="{x:Type viewmodel:HomeViewModel}">
+            <view:HomeViewModel/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewmodel:ListViewModel}">
+            <view:ListViewModel/>
+        </DataTemplate>
     </Application.Resources>
 </Application>
