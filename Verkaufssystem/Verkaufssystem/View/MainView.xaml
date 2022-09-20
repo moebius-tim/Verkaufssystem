@@ -17,14 +17,14 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition/>
-        </Grid.RowDefinitions>  
+        </Grid.RowDefinitions>
 
-        <ContentControl Grid.Column="1" Content="{Binding CurrentViewModel}"></ContentControl>
+        <ContentControl Content="{Binding CurrentViewModel}" Grid.RowSpan="2"/>
 
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left">
-            <Button Margin="5" Command="{Binding OpenChildViewCommand}" Content="Open Child Window" HorizontalAlignment="Left"/>
-            <Button Margin="5" Command="{Binding UpdateViewCommand}" CommandParameter="Home" Content="Show Home View"/>
-            <Button Margin="5" Command="{Binding UpdateViewCommand}" CommandParameter="List" Content="Show List View"/>
+            <Button Margin="5" Command="{Binding UpdateViewCommand}" CommandParameter ="Startseite" Content="Startseite" HorizontalAlignment="Left"/>
+            <Button Margin="5" Command="{Binding UpdateViewCommand}" CommandParameter="Adidas" Content="Adidas Artikel"/>
+            <Button Margin="5" Command="{Binding UpdateViewCommand}" CommandParameter="Nike" Content="Nike Artikel"/>
         </StackPanel>
         <ContentControl Grid.Row="1">
 

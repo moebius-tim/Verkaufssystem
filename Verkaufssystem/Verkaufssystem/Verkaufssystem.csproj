@@ -64,15 +64,19 @@
     </Compile>
     <Compile Include="Helper\RelayCommand.cs" />
     <Compile Include="Helper\UpdateViewCommand.cs" />
+    <Compile Include="ViewModel\AdidasViewModel.cs" />
     <Compile Include="ViewModel\BaseViewModel.cs" />
     <Compile Include="ViewModel\HomeViewModel.cs" />
-    <Compile Include="ViewModel\ListViewModel.cs" />
+    <Compile Include="ViewModel\NikeViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="View\AdidasView.xaml.cs">
+      <DependentUpon>AdidasView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\HomeView.xaml.cs">
       <DependentUpon>HomeView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\ListView.xaml.cs">
-      <DependentUpon>ListView.xaml</DependentUpon>
+    <Compile Include="View\NikeView.xaml.cs">
+      <DependentUpon>NikeView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\MainView.xaml.cs">
       <DependentUpon>MainView.xaml</DependentUpon>
@@ -105,11 +109,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="View\AdidasView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\HomeView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\ListView.xaml">
+    <Page Include="View\NikeView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

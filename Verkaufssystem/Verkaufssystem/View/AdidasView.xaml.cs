@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace Verkaufssystem.View
 {
     /// <summary>
-    /// Interaktionslogik für ListViewModel.xaml
+    /// Interaktionslogik für AdidasNewView.xaml
     /// </summary>
-    public partial class ListViewModel : UserControl
+    public partial class AdidasView : UserControl
     {
-        public ListViewModel()
+        public AdidasView()
         {
             InitializeComponent();
         }

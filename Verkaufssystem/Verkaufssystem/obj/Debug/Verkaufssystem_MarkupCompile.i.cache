@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\App.xaml
-3-1847138771
+4-1457571372
 
-14-891307986
+16-1343270348
 13-1505183044
-View\HomeView.xaml;View\ListView.xaml;View\MainView.xaml;
+View\AdidasView.xaml;View\HomeView.xaml;View\NikeView.xaml;View\MainView.xaml;
 
-True
+False
 

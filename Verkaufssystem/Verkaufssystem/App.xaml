@@ -7,10 +7,13 @@
              StartupUri="View/MainView.xaml">
     <Application.Resources>
         <DataTemplate DataType="{x:Type viewmodel:HomeViewModel}">
-            <view:HomeViewModel/>
+            <view:HomeView/>
         </DataTemplate>
-        <DataTemplate DataType="{x:Type viewmodel:ListViewModel}">
-            <view:ListViewModel/>
+        <DataTemplate DataType="{x:Type viewmodel:NikeViewModel}">
+            <view:NikeView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewmodel:AdidasViewModel}">
+            <view:AdidasView/>
         </DataTemplate>
     </Application.Resources>
 </Application>

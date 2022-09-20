@@ -25,10 +25,12 @@ namespace Verkaufssystem.Helper
 
         public void Execute(object parameter)
         {
-            if (parameter.ToString() == "Home")
+            if (parameter.ToString() == "Startseite")
                 _viewModel.CurrentViewModel = new HomeViewModel();
-            else if (parameter.ToString() == "List")
-                _viewModel.CurrentViewModel = new ListViewModel();
+            else if (parameter.ToString() == "Nike")
+                _viewModel.CurrentViewModel = new NikeViewModel();
+            else if (parameter.ToString() == "Adidas")
+                _viewModel.CurrentViewModel = new AdidasViewModel();
         }
     }
 }

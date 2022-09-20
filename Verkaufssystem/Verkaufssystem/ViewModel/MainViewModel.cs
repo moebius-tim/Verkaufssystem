@@ -33,5 +33,13 @@ namespace Verkaufssystem.ViewModel
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("CurrentViewModel"));
             }
         }
+
+
+
+        // DB Connection
+        //DBAcess dba = DBAcess.GetObject();
+        //dba.connectionStringDB ("qwertzasdf");
+
+
     }
 }

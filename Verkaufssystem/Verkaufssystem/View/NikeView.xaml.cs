@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace Verkaufssystem.View
 {
     /// <summary>
-    /// Interaktionslogik für HomeView.xaml
+    /// Interaktionslogik für NikeViewModel.xaml
     /// </summary>
-    public partial class HomeView : UserControl
+    public partial class NikeView : UserControl
     {
-        public HomeView()
+        public NikeView()
         {
             InitializeComponent();
         }

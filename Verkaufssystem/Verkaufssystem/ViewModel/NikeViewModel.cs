@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Verkaufssystem.ViewModel
 {
-    class ListViewModel : BaseViewModel
+    class NikeViewModel : BaseViewModel
     {
+        public NikeViewModel()
+        {
+
+        }
     }
 }

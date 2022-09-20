@@ -1,0 +1,6 @@
+C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Model\bin\Debug\Model.dll
+C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Model\bin\Debug\Model.pdb
+C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Model\obj\Debug\Model.csprojAssemblyReference.cache
+C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Model\obj\Debug\Model.dll
+C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Model\obj\Debug\Model.pdb
