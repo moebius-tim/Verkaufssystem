@@ -20,3 +20,4 @@ C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\o
 C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\obj\Debug\Verkaufssystem.csproj.CoreCompileInputs.cache
 C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\obj\Debug\Verkaufssystem.exe
 C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\obj\Debug\Verkaufssystem.pdb
+C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\obj\Debug\Verkaufssystem.csprojAssemblyReference.cache
