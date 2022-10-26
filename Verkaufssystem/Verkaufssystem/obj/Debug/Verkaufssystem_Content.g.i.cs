@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("iconwfp-removebg-preview.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bilder/login.png")]
 
 

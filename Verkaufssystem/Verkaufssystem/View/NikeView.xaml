@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Verkaufssystem.View"
         mc:Ignorable="d"
-         Height="1080" Width="1920" Background="DarkRed">
+         Height="auto" Width="auto" Background="DarkRed">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBox Grid.Row="0" FontSize="100"></TextBox>
+        <TextBox Grid.Row="1" FontSize="100"></TextBox>
+        <TextBox Grid.Row="2" FontSize="100"></TextBox>
+        <Button Grid.Row="3"  FontSize="100" Command="{Binding SaveNikeCommand}">Speichern</Button>
     </Grid>
 </UserControl>

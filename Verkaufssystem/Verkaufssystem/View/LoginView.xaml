@@ -11,7 +11,7 @@
         <PasswordBox HorizontalAlignment="Stretch" Height="62" VerticalAlignment="Top" Width="548" Password="Größe" FontSize="30" Margin="753,605,612.6,0"/>
         <TextBox HorizontalAlignment="Left" Height="78" Margin="753,426,0,0" TextWrapping="Wrap" Text="Schriftgröße" FontSize="40" VerticalAlignment="Top" Width="548" TextChanged="TextBox_TextChanged_1"/>
         <Button Margin="852,753,728,211">
-            <Image Height="120" Source="/Verkaufssystem;component/login.png" Stretch="None" Width="337"/>
+            <Image Height="120" Source="/Bilder/login.png" Stretch="None" Width="337"/>
         </Button>
     </Grid>
 </UserControl>
