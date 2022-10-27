@@ -31,15 +31,14 @@ namespace Verkaufssystem.ViewModel
             }
         }
 
-        private void SaveNike()
+        public void SaveNike()
         {
             Schuh s = new Schuh();
             s.Model = "GTX run";
 
-            DBAccess dba = new DBAccess();
+            DBAccess dba = DBAccess.GetObject();
 
             dba.SaveSchuh(s);
-
         }
     }
 }

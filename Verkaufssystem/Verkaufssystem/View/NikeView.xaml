@@ -5,17 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Verkaufssystem.View"
         mc:Ignorable="d"
-         Height="auto" Width="auto" Background="DarkRed">
+         Height="auto" Width="auto" Background="Honeydew">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <TextBox Grid.Row="0" FontSize="100"></TextBox>
-        <TextBox Grid.Row="1" FontSize="100"></TextBox>
-        <TextBox Grid.Row="2" FontSize="100"></TextBox>
-        <Button Grid.Row="3"  FontSize="100" Command="{Binding SaveNikeCommand}">Speichern</Button>
+        <Label   Grid.Row="0" FontSize="35">Name</Label>
+        <TextBox Grid.Row="0" FontSize="100" Margin="232,0,0.4,0.2"></TextBox>
+        <Label   Grid.Row="1" FontSize="35">Beschreibung</Label>
+        <TextBox FontSize="100" Margin="232,0.2,0.4,0.4" Grid.Row="1"/>
+        <Label   Grid.Row="2" FontSize="35">Preis</Label>
+        <TextBox Grid.Row="2" FontSize="100" Margin="232,0.4,0.4,0"></TextBox>
+        <Button  Grid.Row="3" FontSize="100" Command="{Binding SaveNikeCommand}">Speichern</Button>
     </Grid>
 </UserControl>
