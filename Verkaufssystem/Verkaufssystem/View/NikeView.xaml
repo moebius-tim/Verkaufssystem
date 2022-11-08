@@ -16,11 +16,11 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <Label   Grid.Row="0" FontSize="35">Name</Label>
-        <TextBox Grid.Row="0" FontSize="100" Margin="232,0,0.4,0.2"></TextBox>
+        <TextBox Text ="{Binding Schuhname}" Grid.Row="0" FontSize="50" Margin="232,0,0.4,0.2"></TextBox>
         <Label   Grid.Row="1" FontSize="35">Beschreibung</Label>
-        <TextBox FontSize="100" Margin="232,0.2,0.4,0.4" Grid.Row="1"/>
+        <TextBox Text ="{Binding Beschreibung}" FontSize="50" Margin="232,0.2,0.4,0.4" Grid.Row="1"/>
         <Label   Grid.Row="2" FontSize="35">Preis</Label>
-        <TextBox Grid.Row="2" FontSize="100" Margin="232,0.4,0.4,0"></TextBox>
-        <Button  Grid.Row="3" FontSize="100" Command="{Binding SaveNikeCommand}">Speichern</Button>
+        <TextBox Text ="{Binding Preis}" Grid.Row="2" FontSize="100" Margin="232,0.4,0.4,0"></TextBox>
+        <Button  Grid.Row="3" FontSize="50" Command="{Binding SaveNikeCommand}">Speichern</Button>
     </Grid>
 </UserControl>

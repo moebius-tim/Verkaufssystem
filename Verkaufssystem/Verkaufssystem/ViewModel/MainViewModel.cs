@@ -7,22 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using DataAccess;
 
 namespace Verkaufssystem.ViewModel
 {
     public class MainViewModel : INotifyPropertyChanged
     {
-        BaseViewModel _currentViewModel = new HomeViewModel();
-
         public event PropertyChangedEventHandler PropertyChanged;
 
-        public MainViewModel()
-        {
-            UpdateViewCommand = new UpdateViewCommand(this);
-        }
-
-        public ICommand UpdateViewCommand { get; set; }
-
+        BaseViewModel _currentViewModel = new HomeViewModel();
 
         public BaseViewModel CurrentViewModel
         {
@@ -33,6 +26,18 @@ namespace Verkaufssystem.ViewModel
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("CurrentViewModel"));
             }
         }
+
+
+        public MainViewModel()
+        {
+            UpdateViewCommand = new UpdateViewCommand(this);
+        }
+
+
+
+        public ICommand UpdateViewCommand { get; set; }
+
+
 
 
 

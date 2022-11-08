@@ -12,8 +12,5 @@
         <DataTemplate DataType="{x:Type viewmodel:NikeViewModel}">
             <view:NikeView/>
         </DataTemplate>
-        <DataTemplate DataType="{x:Type viewmodel:AdidasViewModel}">
-            <view:AdidasView/>
-        </DataTemplate>
     </Application.Resources>
 </Application>

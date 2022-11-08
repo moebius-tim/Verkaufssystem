@@ -32,13 +32,13 @@ namespace DataAccess
         {
             try
             {
-                MySqlConnection con = new MySqlConnection(@"SERVER = 10.8.11.241;DATABASE=verkaufssystem;UID=root;PASSWORD=login;");
+                MySqlConnection con = new MySqlConnection(@"SERVER = localhost;DATABASE=verkaufssystem;UID=root;PASSWORD=login;");
 
                 con.Open();
 
                 string insert = $@"INSERT INTO `verkaufssystem`.`tblschuh` 
                                     (`sID`, `schuhname`, `beschreibung`, `preis`, `fidmarke`, `farbe`) 
-                                   VALUES ('2', 'NMD', 'Schuh für den Alltag oder Sport', '89.99', '2', 'green');"; // Statt string Bsp.: 'text' -> {t.AnzahlWdh}
+                                   VALUES (' ', '{s.Name}', '{s.Beschreibung}', '{s.Preis}', '{s.FidMarke}', '{s.Farbe}');"; // Statt string Bsp.: 'text' -> {t.AnzahlWdh}
 
                 con.Close();
                 return true;

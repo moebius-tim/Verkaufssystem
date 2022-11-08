@@ -8,6 +8,10 @@ namespace Model
 {
     public class Schuh
     {
-        public string Model { get; set; }
+        public string Name { get; set; }
+        public string Beschreibung { get; set; }
+        public double Preis{ get; set; }
+        public int FidMarke{ get; set; }
+        public string Farbe { get; set; }
     }
 }

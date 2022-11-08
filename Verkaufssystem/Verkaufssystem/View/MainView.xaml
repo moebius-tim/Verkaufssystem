@@ -23,9 +23,7 @@
 
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left">
             <Button Margin="5" Command="{Binding UpdateViewCommand}" CommandParameter ="Startseite" Content="Startseite" HorizontalAlignment="Left"/>
-            <Button Margin="5" Command="{Binding UpdateViewCommand}" CommandParameter="Adidas" Content="Adidas Artikel"/>
             <Button Margin="5" Command="{Binding UpdateViewCommand}" CommandParameter="Nike" Content="Nike Artikel"/>
-            <Button Margin="5" Command="{Binding UpdateViewCommand}" CommandParameter ="Login" Content="Zum Login" HorizontalAlignment="Right"/>
         </StackPanel>
         <ContentControl Grid.Row="1">
 

@@ -8,5 +8,6 @@ namespace Verkaufssystem.ViewModel
 {
     public class BaseViewModel
     {
+
     }
 }
