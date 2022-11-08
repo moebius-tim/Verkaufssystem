@@ -19,14 +19,12 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <ContentControl Content="{Binding CurrentViewModel}" Grid.RowSpan="2"/>
+        <ContentControl Grid.Row="1" Content="{Binding CurrentViewModel}"  />
 
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left">
             <Button Margin="5" Command="{Binding UpdateViewCommand}" CommandParameter ="Startseite" Content="Startseite" HorizontalAlignment="Left"/>
             <Button Margin="5" Command="{Binding UpdateViewCommand}" CommandParameter="Nike" Content="Nike Artikel"/>
         </StackPanel>
-        <ContentControl Grid.Row="1">
-
-        </ContentControl>
+        
     </Grid>
 </Window>

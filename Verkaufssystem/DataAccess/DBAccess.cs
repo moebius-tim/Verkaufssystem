@@ -38,7 +38,13 @@ namespace DataAccess
 
                 string insert = $@"INSERT INTO `verkaufssystem`.`tblschuh` 
                                     (`sID`, `schuhname`, `beschreibung`, `preis`, `fidmarke`, `farbe`) 
-                                   VALUES (' ', '{s.Name}', '{s.Beschreibung}', '{s.Preis}', '{s.FidMarke}', '{s.Farbe}');"; // Statt string Bsp.: 'text' -> {t.AnzahlWdh}
+                                   VALUES (' ', '{s.Name}', '{s.Beschreibung}', '{s.Preis}', '{s.FidMarke}', '{s.Farbe}');";
+
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.CommandText = insert;
+                cmd.Connection = con;
+
+                MySqlDataReader reader = cmd.ExecuteReader();
 
                 con.Close();
                 return true;
@@ -50,7 +56,5 @@ namespace DataAccess
             }
         }
     }
-
-    //        https://csharp-hilfe.de/csharp-mit-sql-verbinden/
 }
 

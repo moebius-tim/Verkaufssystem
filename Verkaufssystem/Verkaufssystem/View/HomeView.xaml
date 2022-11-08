@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Verkaufssystem.View"
         mc:Ignorable="d"
-        Height="1080" Width="1920" Background="BlueViolet">
-    <Grid>
-        
-    </Grid>
+        Height="auto" Width="auto" Background="Honeydew">
+    <Viewbox>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Image Grid.Row="0" Source="C:\Users\moebius\Documents\GitHub\Verkaufssystem\logo\iconwfp-removebg-preview.ico" Height="10" Width="50"></Image>
+            <Label Grid.Row="1" FontSize="15">SNEAKER MOVEMENT</Label>
+        </Grid>
+    </Viewbox>
 </UserControl>

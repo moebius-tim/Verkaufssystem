@@ -20,7 +20,8 @@
         <Label   Grid.Row="1" FontSize="35">Beschreibung</Label>
         <TextBox Text ="{Binding Beschreibung}" FontSize="50" Margin="232,0.2,0.4,0.4" Grid.Row="1"/>
         <Label   Grid.Row="2" FontSize="35">Preis</Label>
-        <TextBox Text ="{Binding Preis}" Grid.Row="2" FontSize="100" Margin="232,0.4,0.4,0"></TextBox>
+        <TextBox Text ="{Binding Preis}" Grid.Row="2" FontSize="50" Margin="232,0.4,0.4,0"></TextBox>
         <Button  Grid.Row="3" FontSize="50" Command="{Binding SaveNikeCommand}">Speichern</Button>
+        <Label   Grid.Row="4" FontSize="35" Content="{Binding StatusMessage}"></Label>
     </Grid>
 </UserControl>

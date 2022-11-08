@@ -114,6 +114,7 @@ namespace Verkaufssystem.ViewModel
             Preis = 0;
             FidMarke = 0;
             Farbe = string.Empty;
+            StatusMessage = "Alle Felder wurden gelöscht!";
 
             //StatusMessage = "Alle Felder wurden gelöscht!";
         }
@@ -135,12 +136,18 @@ namespace Verkaufssystem.ViewModel
             Schuh s = new Schuh();
             s.Name = Schuhname;
             s.Beschreibung = Beschreibung;
-            s.Preis = Preis; 
+            s.Preis = Preis;
+            //TODO Farbe ( Neues Feld in der Viewanzeige ) 
             s.FidMarke = 1; // FK 1 = Nike in DB
 
             DBAccess dba = DBAccess.GetObject();
 
             dba.SaveSchuh(s);
+
+            if (dba.SaveSchuh(s))
+                StatusMessage = Schuhname + " erfolgreich gespeichert.";
+            else
+                StatusMessage = Schuhname + " konnte nicht gespeichert werden.";
         }
     }
 }
