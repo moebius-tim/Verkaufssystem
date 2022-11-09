@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Verkaufssystem.View"
+        xmlns:ff="clr-namespace:FunctionalFun.UI"
         mc:Ignorable="d"
         Height="auto" Width="auto" Background="Honeydew">
     <Viewbox>
@@ -13,9 +14,19 @@
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
-            <Image Grid.Row="0" Source="C:\Users\moebius\Documents\GitHub\Verkaufssystem\logo\iconwfp-removebg-preview.ico" Height="10" Width="50"></Image>
-            <Label Grid.Row="1" FontSize="15">SNEAKER MOVEMENT</Label>
+            <Image          Grid.Row="0" Source="C:\Users\moebius\Documents\GitHub\Verkaufssystem\logo\iconwfp-removebg-preview.ico" Height="25" Width="25"></Image>
+            <Label          Grid.Row="1" FontSize="10">SNEAKER MOVEMENT</Label>
+            <Label          Grid.Row="2" FontSize="5" HorizontalAlignment="Center"                                >Benutzername</Label>
+            <TextBox        Grid.Row="3" FontSize="5" Text="{Binding Email}"  Height="10" Width="75"              ></TextBox>
+            <Label          Grid.Row="4" FontSize="5" HorizontalAlignment="Center"                                >Passwort</Label>
+            <PasswordBox    Grid.Row="5" FontSize="5" ff:PasswordHelper.Attach="True" ff:PasswordHelper.Password"{Binding Path=Password}"                               Height="10" Width="75"       ></PasswordBox>
+            <Label          Grid.Row="6"                                                                          ></Label>
+            <Button         Grid.Row="7" FontSize="5" Command="{Binding SaveLoginCommand}" Height="10" Width="50" >Login</Button>
         </Grid>
     </Viewbox>
 </UserControl>

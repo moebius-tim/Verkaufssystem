@@ -23,5 +23,10 @@ namespace Verkaufssystem.View
         {
             InitializeComponent();
         }
+
+        private void Label_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

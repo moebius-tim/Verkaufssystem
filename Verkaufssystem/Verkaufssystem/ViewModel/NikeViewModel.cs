@@ -115,8 +115,6 @@ namespace Verkaufssystem.ViewModel
             FidMarke = 0;
             Farbe = string.Empty;
             StatusMessage = "Alle Felder wurden gelöscht!";
-
-            //StatusMessage = "Alle Felder wurden gelöscht!";
         }
 
 
