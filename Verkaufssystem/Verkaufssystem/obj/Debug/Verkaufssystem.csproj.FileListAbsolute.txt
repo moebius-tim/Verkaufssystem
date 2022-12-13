@@ -31,6 +31,7 @@ C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\b
 C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\obj\Debug\Verkaufssystem.csprojAssemblyReference.cache
 C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\obj\Debug\View\HomeView.g.cs
+C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\obj\Debug\View\LagerbestandView.g.cs
 C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\obj\Debug\View\NikeView.g.cs
 C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\obj\Debug\View\MainView.g.cs
 C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\obj\Debug\App.g.cs
@@ -39,6 +40,7 @@ C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\o
 C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\obj\Debug\Verkaufssystem_MarkupCompile.lref
 C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\obj\Debug\App.baml
 C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\obj\Debug\View\HomeView.baml
+C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\obj\Debug\View\LagerbestandView.baml
 C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\obj\Debug\View\NikeView.baml
 C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\obj\Debug\View\MainView.baml
 C:\Users\moebius\Documents\GitHub\Verkaufssystem\Verkaufssystem\Verkaufssystem\obj\Debug\Verkaufssystem.g.resources

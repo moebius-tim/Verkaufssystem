@@ -1,6 +1,7 @@
 ﻿using System;
 using Model;
 using MySql.Data.MySqlClient;
+using System.Collections.Generic;
 
 namespace DataAccess
 {
@@ -36,9 +37,7 @@ namespace DataAccess
 
                 con.Open();
 
-                string insert = $@"INSERT INTO `verkaufssystem`.`tblschuh` 
-                                    (`sID`, `schuhname`, `beschreibung`, `preis`, `fidmarke`, `farbe`) 
-                                   VALUES (' ', '{s.Name}', '{s.Beschreibung}', '{s.Preis}', '{s.FidMarke}', '{s.Farbe}');";
+                string insert = $@"INSERT INTO `verkaufssystem`.`tblschuh` VALUES (' ', '{s.Name}', '{s.Beschreibung}', '{s.Preis}', '{s.FidMarke}', '{s.Farbe}');";
 
                 MySqlCommand cmd = new MySqlCommand();
                 cmd.CommandText = insert;
@@ -83,19 +82,26 @@ namespace DataAccess
                     reader.GetValue(0).ToString();
                     reader.GetValue(1).ToString();
 
-                    if ( l.Email.Equals(reader.GetString(0) )
+                    if ( (l.Email == null)
+                      || (l.Passwort == null) )
+                    {
+                        break;
+                    }
+
+                    if (l.Email.Equals(reader.GetString(0))
                       && l.Passwort.Equals(reader.GetString(1))
                        )
                     {
                         loginIsMatching = true;
-                        //status message einbauen
+                        break;
                     }
                     else
                     {
                         loginIsMatching = false;
-                        //status message einabauen
                     }
                 }
+
+                con.Close();
 
                 return loginIsMatching;
             }
@@ -105,6 +111,51 @@ namespace DataAccess
                 throw;
             }
         }
+
+        public List<Lagerbestand> GetStoredShoes()
+        {
+            List<Lagerbestand> allShoes = new List<Lagerbestand>();
+
+            try
+            {
+                MySqlConnection con = new MySqlConnection(
+               @"SERVER = localhost;DATABASE=verkaufssystem;UID=root;PASSWORD=login;");
+
+                con.Open();
+
+                string selectStatement = $@"SELECT * FROM schuh_marke_view";
+
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.CommandText = selectStatement;
+                cmd.Connection = con;
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Lagerbestand t = new Lagerbestand(
+                        reader.GetValue(0).ToString(),
+                        reader.GetValue(1).ToString(),
+                        Convert.ToDouble(reader.GetValue(2).ToString()),
+                        reader.GetValue(3).ToString(),
+                        reader.GetValue(4).ToString()
+                        );
+
+                    allShoes.Add(t);
+                }
+
+                con.Close(); 
+
+                return allShoes;
+            }
+            catch (Exception)
+            {
+                return null;
+                //throw;
+            }
+        }
+
+
     }
 }
 

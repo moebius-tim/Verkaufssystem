@@ -36,15 +36,5 @@ namespace Verkaufssystem.ViewModel
 
 
         public ICommand UpdateViewCommand { get; set; }
-
-
-
-
-
-        // DB Connection
-        //DBAcess dba = DBAcess.GetObject();
-        //dba.connectionStringDB ("qwertzasdf");
-
-
     }
 }

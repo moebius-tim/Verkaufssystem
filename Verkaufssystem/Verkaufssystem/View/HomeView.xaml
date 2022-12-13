@@ -4,9 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Verkaufssystem.View"
-        xmlns:ff="clr-namespace:FunctionalFun.UI"
         mc:Ignorable="d"
-        Height="auto" Width="auto" Background="Honeydew">
+        Height="auto" Width="auto" Background="Khaki">
     <Viewbox>
         <Grid>
             <Grid.RowDefinitions>
@@ -18,15 +17,21 @@
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
-            <Image          Grid.Row="0" Source="C:\Users\moebius\Documents\GitHub\Verkaufssystem\logo\iconwfp-removebg-preview.ico" Height="25" Width="25"></Image>
-            <Label          Grid.Row="1" FontSize="10">SNEAKER MOVEMENT</Label>
-            <Label          Grid.Row="2" FontSize="5" HorizontalAlignment="Center"                                >Benutzername</Label>
-            <TextBox        Grid.Row="3" FontSize="5" Text="{Binding Email}"  Height="10" Width="75"              ></TextBox>
-            <Label          Grid.Row="4" FontSize="5" HorizontalAlignment="Center"                                >Passwort</Label>
-            <PasswordBox    Grid.Row="5" FontSize="5" ff:PasswordHelper.Attach="True" ff:PasswordHelper.Password"{Binding Path=Password}"                               Height="10" Width="75"       ></PasswordBox>
-            <Label          Grid.Row="6"                                                                          ></Label>
-            <Button         Grid.Row="7" FontSize="5" Command="{Binding SaveLoginCommand}" Height="10" Width="50" >Login</Button>
+            <Image   Grid.Row="0" Source="C:\Users\moebius\Documents\GitHub\Verkaufssystem\logo\iconwfp-removebg-preview.ico" Height="25" Width="25"></Image>
+            <Label   Grid.Row="1" FontSize="10">SNEAKER MOVEMENT</Label>
+            <Label   Grid.Row="2" FontSize="5" HorizontalAlignment="Center">Benutzername</Label>
+            <TextBox Grid.Row="3" FontSize="5" Text="{Binding Benutzername}" Height="10" Width="75"></TextBox>
+            <Label   Grid.Row="4" FontSize="5" HorizontalAlignment="Center">Passwort</Label>
+            <TextBox Grid.Row="5" FontSize="5" Text="{Binding Passwort}" Height="10" Width="75" FontFamily="Segoe MDL2 Assets"></TextBox>
+            <Label   Grid.Row="6"></Label>
+            <Button  Grid.Row="6" FontSize="5" Command="{Binding SaveLoginCommand}" Margin="44,2,43.8,0.6" RenderTransformOrigin="1.161,0.287" Background="#01000000" BorderThickness="0">
+                <StackPanel>
+                    <Image Source="C:\Users\moebius\Documents\GitHub\Verkaufssystem\logo\login.png" Height="5" Width="14"></Image>
+                </StackPanel>
+            </Button>
+            <Label   Grid.Row="8" FontSize="5" HorizontalAlignment="Center" Content="{Binding StatusMessage}"></Label>
         </Grid>
     </Viewbox>
 </UserControl>

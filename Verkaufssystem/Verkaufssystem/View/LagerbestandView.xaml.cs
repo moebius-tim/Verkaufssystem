@@ -15,23 +15,13 @@ using System.Windows.Shapes;
 namespace Verkaufssystem.View
 {
     /// <summary>
-    /// Interaktionslogik für HomeView.xaml
+    /// Interaktionslogik für Lagerbestand.xaml
     /// </summary>
-    public partial class HomeView : UserControl
+    public partial class LagerbestandView : UserControl
     {
-        public HomeView()
+        public LagerbestandView()
         {
             InitializeComponent();
-        }
-
-        private void Label_PasswordChanged(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Button_ImageFailed(object sender, ExceptionRoutedEventArgs e)
-        {
-
         }
     }
 }

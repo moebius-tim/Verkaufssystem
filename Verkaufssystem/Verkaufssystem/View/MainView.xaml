@@ -6,7 +6,7 @@
         xmlns:vm="clr-namespace:Verkaufssystem.ViewModel"
         xmlns:local="clr-namespace:Verkaufssystem.View"
         mc:Ignorable="d"
-        Title="SneakerMovement" Height="Auto" Width="Auto" WindowState="Maximized" ResizeMode="CanResize">
+        Title="SneakerMovement" Background="Khaki" Height="Auto" Width="Auto" WindowState="Maximized" ResizeMode="CanResize">
     <Window.DataContext>
         <vm:MainViewModel></vm:MainViewModel>
     </Window.DataContext>
@@ -23,7 +23,8 @@
 
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left">
             <Button Margin="5" Command="{Binding UpdateViewCommand}" CommandParameter ="Startseite" Content="Startseite" HorizontalAlignment="Left"/>
-            <Button Margin="5" Command="{Binding UpdateViewCommand}" CommandParameter="Nike" Content="Nike Artikel"/>
+            <Button Margin="5" Command="{Binding UpdateViewCommand}" CommandParameter="Nike" Content="Lagerzugang" Style="{DynamicResource ButtonStyle1}"/>
+            <Button Margin="5" Command="{Binding UpdateViewCommand}" CommandParameter="Lagerbestand" Content="Lagerbestand" Style="{DynamicResource ButtonStyle1}"/>
         </StackPanel>
         
     </Grid>

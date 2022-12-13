@@ -12,13 +12,26 @@ namespace Verkaufssystem.ViewModel
 {
     class HomeViewModel : BaseViewModel, INotifyPropertyChanged
     {
-        public  event   PropertyChangedEventHandler PropertyChanged;
-        private string  _email;
-        ICommand        _saveLoginCommand;
+        public  event  PropertyChangedEventHandler PropertyChanged;
+        private string _email;
+        private string _passwort;
+        private string _statusMessage;
+        ICommand       _saveLoginCommand;
 
         public HomeViewModel()
         {
+            
+        }
 
+        public string StatusMessage
+        {
+            get { return _statusMessage; }
+            set
+            {
+                _statusMessage = value;
+                if (PropertyChanged != null)
+                    PropertyChanged(this, new PropertyChangedEventArgs("StatusMessage"));
+            }
         }
 
         public string Benutzername 
@@ -32,6 +45,19 @@ namespace Verkaufssystem.ViewModel
                 _email = value;
                 if (PropertyChanged != null)
                     PropertyChanged(this, new PropertyChangedEventArgs("Email"));
+            }
+        }
+        public string Passwort
+        {
+            get
+            {
+                return _passwort;
+            }
+            set
+            {
+                _passwort = value;
+                if (PropertyChanged != null)
+                    PropertyChanged(this, new PropertyChangedEventArgs("Passwort"));
             }
         }
 
@@ -50,11 +76,25 @@ namespace Verkaufssystem.ViewModel
         {
             Login l = new Login();
             l.Email = _email;
+            l.Passwort = _passwort;
 
             DBAccess dba = DBAccess.GetObject();
 
             dba.CheckLoginData(l);
+
+            if( dba.CheckLoginData(l) )
+            {
+                StatusMessage = "Erfolgreich angemeldet!";
+
+            }
+            else
+            {
+                StatusMessage = "Anmeldung fehlgeschlagen!";
+            }
+
         }
+
+
 
     }
 }

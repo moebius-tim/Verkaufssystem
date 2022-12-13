@@ -69,11 +69,15 @@
     <Compile Include="Helper\RelayCommand.cs" />
     <Compile Include="Helper\UpdateViewCommand.cs" />
     <Compile Include="ViewModel\BaseViewModel.cs" />
+    <Compile Include="ViewModel\LagerbestandViewModel.cs" />
     <Compile Include="ViewModel\HomeViewModel.cs" />
     <Compile Include="ViewModel\NikeViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="View\HomeView.xaml.cs">
       <DependentUpon>HomeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LagerbestandView.xaml.cs">
+      <DependentUpon>LagerbestandView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\NikeView.xaml.cs">
       <DependentUpon>NikeView.xaml</DependentUpon>
@@ -112,6 +116,10 @@
     <Page Include="View\HomeView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\LagerbestandView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\NikeView.xaml">
       <SubType>Designer</SubType>

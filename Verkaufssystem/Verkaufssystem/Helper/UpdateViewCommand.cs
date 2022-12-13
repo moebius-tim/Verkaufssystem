@@ -29,6 +29,8 @@ namespace Verkaufssystem.Helper
                 _viewModel.CurrentViewModel = new HomeViewModel();
             else if (parameter.ToString() == "Nike")
                 _viewModel.CurrentViewModel = new NikeViewModel();
+            else if (parameter.ToString() == "Lagerbestand")
+                _viewModel.CurrentViewModel = new LagerbestandViewModel();
         }
     }
 }
